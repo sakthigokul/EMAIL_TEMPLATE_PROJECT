@@ -1,3 +1,4 @@
+python -m pip install --upgrade pip
 tensorflow-cpu
 pandas == 1.0.4
 numpy == 1.18.4
