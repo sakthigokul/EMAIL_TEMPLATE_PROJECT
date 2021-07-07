@@ -25,7 +25,7 @@ def classify_utterance(utt):
     loaded_vectorizer = joblib.load(Path.joinpath(artifacts_path,'vectorizer.pickle'))
 
     # load the model
-    loaded_model = pickle.load(Path.joinpath(artifacts_path,'classification.model','rb'))
+    loaded_model = pickle.load(open('classification.model','rb'))
 
     # make a prediction
     return(loaded_model.predict(loaded_vectorizer.transform([utt])))
